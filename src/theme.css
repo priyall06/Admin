@@ -1,0 +1,124 @@
+/* Shared theme: import this once in main.jsx. All pages read these CSS variables. */
+
+:root {
+  --ink: #F5EEE3;
+  --dim: #ADA290;
+  --char: #120D0A;
+  --char-800: #1C1512;
+  --char-700: #271E19;
+  --line: rgba(245, 238, 227, 0.1);
+  --line-strong: rgba(245, 238, 227, 0.22);
+
+  --ember: #E2833B;
+  --ember-deep: #B85C1F;
+  --ember-tint: rgba(226, 131, 59, 0.14);
+
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: var(--char);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+}
+
+.page-loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--char);
+}
+
+.loader-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ember);
+  animation: loader-bounce 1s infinite ease-in-out;
+}
+.loader-dot:nth-child(2) { animation-delay: 0.15s; }
+.loader-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes loader-bounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+/* ---- shared component classes used across app pages ---- */
+
+.btn {
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.2s ease;
+  font-family: var(--font-sans);
+}
+.btn:active { transform: scale(0.97); }
+.btn-ghost { background: rgba(245,238,227,0.03); }
+.btn-ghost:hover { background: rgba(245,238,227,0.09); }
+.btn-primary {
+  background: linear-gradient(180deg, var(--ember), var(--ember-deep));
+  border: none;
+  color: #1A0E04;
+  box-shadow: 0 8px 20px rgba(226,131,59,0.3);
+}
+.btn-primary:hover { box-shadow: 0 12px 26px rgba(226,131,59,0.42); }
+.btn-danger { color: #E28080; border-color: rgba(226,128,128,0.3); }
+
+.card-surface {
+  background: var(--char-800);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.heading-serif {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.tag-pill {
+  background: var(--ember-tint);
+  color: var(--ember);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+input, textarea, select {
+  background: var(--char-700);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+input::placeholder, textarea::placeholder { color: var(--dim); }
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--ember);
+}
