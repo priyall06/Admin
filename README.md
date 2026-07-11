@@ -1,4 +1,4 @@
-# Ladle AI
+> # Ladle AI
 
 ## Project Overview
 
@@ -32,19 +32,23 @@ The application focuses on providing a simple, responsive, and user-friendly exp
 
 Add screenshots of:
 
-* Landing Page
-* Login / Signup
-* Dashboard
-* Recipe Generator
-* Saved Recipes
-* Analytics Dashboard
+* Landing Page-<img width="947" height="393" alt="Screenshot 2026-07-11 220857" src="https://github.com/user-attachments/assets/9caefabd-2a9c-4e37-8e4a-7c03e6d9900c" />
+<img width="940" height="433" alt="S2" src="https://github.com/user-attachments/assets/96c05532-0ff1-4732-8617-8b6460f8ec6c" />
+<img width="940" height="430" alt="s3" src="https://github.com/user-attachments/assets/e24c5300-588c-44a4-8f11-fd0be3437901" />
+* Login / Signup-<img width="959" height="433" alt="Screenshot 2026-07-11 221601" src="https://github.com/user-attachments/assets/a6f94035-2919-4a9d-951e-ee2421b0f896" />
+* Dashboard-<img width="926" height="437" alt="image" src="https://github.com/user-attachments/assets/9cd84f2d-d32c-4b23-a0d8-edae34dc8458" />
+<img width="935" height="261" alt="image" src="https://github.com/user-attachments/assets/b46887a0-1ea8-473f-96af-775ec2ab6ca1" />
+* Recipe Generator-<img width="941" height="431" alt="image" src="https://github.com/user-attachments/assets/e6f6a925-6db9-40dd-93af-517d54db097b" />
+<img width="944" height="427" alt="image" src="https://github.com/user-attachments/assets/18625288-529a-497d-b307-0961a9351189" />
 
-## Installation
 
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Configure the required environment variables.
-4. Run the project using `npm run dev`.
+* Saved Recipes-<img width="935" height="437" alt="image" src="https://github.com/user-attachments/assets/a8572294-9545-4580-9744-dc6d76d0fd86" />
+
+*Meal Planner-<img width="937" height="436" alt="image" src="https://github.com/user-attachments/assets/17c864dc-392c-43f3-bab2-c0accbf41ec5" />
+
+
+
+
 
 ## Live Demo
 
@@ -52,4 +56,6 @@ Live URL:https://admin-458h.vercel.app/
 
 ## GitHub Repository
 
-**Repository:** *(Add your GitHub repository link here.)*
+**Repository:https://github.com/priyall06/Admin
+
+> Developed following the Major Project guidelines shared by Prathamesh Sir.
